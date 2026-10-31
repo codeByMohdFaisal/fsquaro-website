@@ -24,5 +24,5 @@
 
 ## Deferred decisions
 
-1. Homepage layout and visual design are pending approval.
-2. No homepage sections or unapproved design decisions are to be added during the foundation phase.
+1. Public product names, factual descriptions, specifications, and product-to-image mappings require owner review before a detailed product catalogue is published.
+2. Verified marketplace URLs, contact details, and social destinations must be supplied before they are added to the website.

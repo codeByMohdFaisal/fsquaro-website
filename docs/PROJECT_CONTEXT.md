@@ -39,4 +39,4 @@ FSquaro is an Indian fashion jewellery and accessories brand. This project is th
 
 ## Current phase
 
-This phase establishes the project foundation only. Homepage design approval is pending, so no FSquaro homepage sections, visual treatments, or independent design choices are implemented yet.
+The editable FSquaro homepage design is now being implemented in the Next.js application. The first pass includes the approved modern, visually rich homepage direction, supplied brand assets, supplied product photography, responsive layouts, and light/dark theme support. Product names, descriptions, verified marketplace links, contact details, and social destinations remain subject to owner review.
