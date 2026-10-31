@@ -19,7 +19,8 @@
 
 1. The visual direction is Modern Brand: clean, professional, spacious, and premium.
 2. The approved core palette is primary navy `#061D35`, secondary navy `#082B4F`, accent blue `#007BFF`, light background `#FFFFFF`, secondary background `#F4F7FB`, and border `#E2E8F0`.
-3. Official FSquaro logo assets must be used as provided; the logo must not be recreated or modified.
+3. The default visual background is light; dark theme support remains required.
+4. Official FSquaro logo assets must be used as provided; the logo must not be recreated or modified.
 
 ## Deferred decisions
 

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="FSquaro catalogue review prototype." />
+    <title>FSquaro | Catalogue review prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../homepage/design-tokens.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#catalogue">Skip to catalogue</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../homepage/index.html" aria-label="FSquaro prototype home">
+          <img class="brand-light" src="../../public/brand/logo-horizontal-600w.png" alt="FSquaro" />
+          <img class="brand-dark" src="../../public/brand/logo-horizontal-white-600w.png" alt="" aria-hidden="true" />
+        </a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="../homepage/index.html">Home</a>
+          <a class="is-active" href="index.html" aria-current="page">Shop</a>
+          <a href="../homepage/index.html#collections">Collections</a>
+          <a href="../homepage/index.html#about">About</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button" type="button" data-theme-toggle aria-label="Switch to dark theme" title="Toggle theme">
+            <svg data-theme-icon viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 15.4A7.7 7.7 0 0 1 8.6 3.8 8.3 8.3 0 1 0 20.2 15.4Z"></path></svg>
+          </button>
+          <button class="menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="../homepage/index.html">Home</a>
+        <a href="index.html" aria-current="page">Shop</a>
+        <a href="../homepage/index.html#collections">Collections</a>
+        <a href="../homepage/index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="catalogue-hero">
+        <div class="container">
+          <p class="eyebrow">Catalogue prototype</p>
+          <h1>Explore the collection</h1>
+          <p>All available product groups are shown here for review. Product names, descriptions, secondary-media roles, and marketplace destinations still require approval.</p>
+        </div>
+      </section>
+
+      <section class="catalogue-section" id="catalogue" aria-labelledby="catalogue-title">
+        <div class="container">
+          <div class="review-notice" role="note">
+            <strong>Review-only data.</strong> These 14 parent product groups are not marked as published. Internal numeric references are excluded from this prototype.
+          </div>
+          <div class="catalogue-heading">
+            <div>
+              <p class="eyebrow">Product catalogue</p>
+              <h2 id="catalogue-title">All product groups</h2>
+            </div>
+            <p class="result-count" data-result-count aria-live="polite"></p>
+          </div>
+
+          <div class="catalogue-layout">
+            <aside class="filters" aria-label="Product filters">
+              <label class="search-field" for="product-search">
+                <span>Search the catalogue</span>
+                <input id="product-search" type="search" autocomplete="off" placeholder="Product, category, colour or design" />
+              </label>
+              <fieldset>
+                <legend>Category</legend>
+                <div class="filter-list" data-category-filters></div>
+              </fieldset>
+              <button class="clear-button" type="button" data-clear-filters>Clear filters</button>
+            </aside>
+            <div class="catalogue-results" data-product-grid aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img class="footer-logo" src="../../public/brand/logo-horizontal-white-600w.png" alt="FSquaro" />
+        <p>Standalone catalogue design prototype — not a production shop.</p>
+        <a href="../homepage/index.html">Return to homepage prototype</a>
+      </div>
+    </footer>
+
+    <script src="../catalogue-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

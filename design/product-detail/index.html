@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="FSquaro product-detail review prototype." />
+    <title>FSquaro | Product review prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../homepage/design-tokens.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#product-detail">Skip to product details</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../homepage/index.html" aria-label="FSquaro prototype home">
+          <img class="brand-light" src="../../public/brand/logo-horizontal-600w.png" alt="FSquaro" />
+          <img class="brand-dark" src="../../public/brand/logo-horizontal-white-600w.png" alt="" aria-hidden="true" />
+        </a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="../homepage/index.html">Home</a>
+          <a href="../shop/index.html">Shop</a>
+          <a href="../homepage/index.html#collections">Collections</a>
+          <a href="../homepage/index.html#about">About</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button" type="button" data-theme-toggle aria-label="Switch to dark theme" title="Toggle theme">
+            <svg data-theme-icon viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 15.4A7.7 7.7 0 0 1 8.6 3.8 8.3 8.3 0 1 0 20.2 15.4Z"></path></svg>
+          </button>
+          <button class="menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="../homepage/index.html">Home</a>
+        <a href="../shop/index.html">Shop</a>
+        <a href="../homepage/index.html#collections">Collections</a>
+        <a href="../homepage/index.html#about">About</a>
+      </nav>
+    </header>
+
+    <main id="product-detail">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../homepage/index.html">Home</a><span aria-hidden="true">/</span><a href="../shop/index.html">Shop</a><span aria-hidden="true">/</span><span data-breadcrumb-current>Product review</span>
+        </nav>
+      </div>
+
+      <section class="detail-section" aria-labelledby="product-title">
+        <div class="container" data-product-detail></div>
+      </section>
+
+      <section class="related-section" aria-labelledby="related-title">
+        <div class="container">
+          <div class="section-heading-row">
+            <div>
+              <p class="eyebrow">Continue exploring</p>
+              <h2 id="related-title">Related product groups</h2>
+            </div>
+            <a class="back-to-shop" href="../shop/index.html">All product groups <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="related-grid" data-related-products></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img class="footer-logo" src="../../public/brand/logo-horizontal-white-600w.png" alt="FSquaro" />
+        <p>Standalone product-detail design prototype — not a production product page.</p>
+        <a href="../shop/index.html">Browse all product groups</a>
+      </div>
+    </footer>
+
+    <script src="../catalogue-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
