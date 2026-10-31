@@ -153,6 +153,7 @@ export default function HomeExperience() {
 
           <nav className="desktop-nav" aria-label="Primary navigation">
             <a href="#home">Home</a>
+            <a href="/shop">Shop</a>
             <a href="#collections">Collections</a>
             <a href="#featured">Featured</a>
             <a href="#about">About</a>
@@ -209,6 +210,9 @@ export default function HomeExperience() {
         >
           <a href="#home" onClick={closeMobileNavigation}>
             Home
+          </a>
+          <a href="/shop" onClick={closeMobileNavigation}>
+            Shop
           </a>
           <a href="#collections" onClick={closeMobileNavigation}>
             Collections
@@ -314,8 +318,8 @@ export default function HomeExperience() {
                   Explore the collection through original FSquaro product imagery.
                 </p>
               </div>
-              <a className="inline-link" href="#featured">
-                See featured pieces <ArrowRight size={17} aria-hidden="true" />
+              <a className="inline-link" href="/shop">
+                Browse all products <ArrowRight size={17} aria-hidden="true" />
               </a>
             </div>
 
@@ -325,7 +329,7 @@ export default function HomeExperience() {
                 return (
                   <a
                     className="category-card"
-                    href="#featured"
+                    href="/shop"
                     key={category.id}
                     aria-label={"View " + categoryName}
                   >
@@ -369,19 +373,19 @@ export default function HomeExperience() {
                 const categoryName = categoryById[product.categoryId].name;
                 return (
                   <article className="product-card" key={product.id}>
-                    <div className="product-image">
+                    <a className="product-image" href={"/product/" + product.slug}>
                       <Image
                         src={product.variants[0].mainImage}
                         alt={"FSquaro " + categoryName + " selection"}
                         fill
                         sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw"
                       />
-                    </div>
+                    </a>
                     <div className="product-copy">
                       <p>{categoryName}</p>
                       <h3>{productName(product)}</h3>
-                      <a className="product-link" href="#collections">
-                        Explore collection <ArrowRight size={16} aria-hidden="true" />
+                      <a className="product-link" href={"/product/" + product.slug}>
+                        View details <ArrowRight size={16} aria-hidden="true" />
                       </a>
                     </div>
                   </article>
@@ -453,6 +457,7 @@ export default function HomeExperience() {
           </div>
           <div className="footer-column">
             <h2>Explore</h2>
+            <a href="/shop">Shop all products</a>
             <a href="#collections">Collections</a>
             <a href="#featured">Featured pieces</a>
             <a href="#about">About FSquaro</a>
@@ -460,7 +465,7 @@ export default function HomeExperience() {
           <div className="footer-column">
             <h2>Categories</h2>
             {categoryCards.slice(0, 3).map((category) => (
-              <a href="#collections" key={category.id}>
+              <a href="/shop" key={category.id}>
                 {categoryById[category.id].name}
               </a>
             ))}

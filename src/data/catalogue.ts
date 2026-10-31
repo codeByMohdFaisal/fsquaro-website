@@ -294,3 +294,11 @@ export const catalogue: readonly Product[] = [
 export const categoryById = Object.fromEntries(
   categories.map((category) => [category.id, category]),
 ) as Record<CategoryId, Category>;
+
+export function getProductBySlug(slug: string) {
+  return catalogue.find((product) => product.slug === slug);
+}
+
+export function getProductDisplayName(product: Product) {
+  return product.publicName ?? categoryById[product.categoryId].name;
+}
