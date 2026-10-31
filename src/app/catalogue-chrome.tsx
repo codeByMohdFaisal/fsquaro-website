@@ -115,7 +115,7 @@ export function CatalogueFooter() {
             width={190}
             height={64}
           />
-          <p>Fashion jewellery and accessories for everyday style and special moments.</p>
+          <p>A growing catalogue of products for everyday needs and interests.</p>
         </div>
         <div className="footer-column">
           <h2>Explore</h2>

@@ -2,11 +2,11 @@
 
 ## Brand and purpose
 
-FSquaro is an Indian fashion jewellery and accessories brand. This project is the official FSquaro brand website: a premium, modern, responsive experience that presents the brand and its product catalogue.
+FSquaro is a growing Indian multi-category brand. This project is the official FSquaro website: a premium, modern, responsive experience that presents the brand and its product catalogue. The current collection focuses on jewellery and accessories; food and other categories may be added as their product data, imagery, and details are supplied.
 
 ## Product scope
 
-- The website is a brand and product-catalogue experience, not a complete e-commerce checkout platform.
+- The website is a multi-category brand and product-catalogue experience, not a complete e-commerce checkout platform.
 - Product purchase actions will redirect visitors to verified external marketplaces.
 - Product prices must not be displayed.
 - Product search is required in the first release.
@@ -39,4 +39,4 @@ FSquaro is an Indian fashion jewellery and accessories brand. This project is th
 
 ## Current phase
 
-The editable FSquaro homepage design is now being implemented in the Next.js application. The first pass includes the approved modern, visually rich homepage direction, supplied brand assets, supplied product photography, responsive layouts, and light/dark theme support. Product names, descriptions, verified marketplace links, contact details, and social destinations remain subject to owner review.
+The editable FSquaro homepage design is now implemented in the Next.js application. The first pass includes a modern, visually rich homepage direction, supplied brand assets, supplied product photography, responsive layouts, and light/dark theme support. The public brand voice is intentionally multi-category so food and other product lines can be added without redesigning the site. Product names, descriptions, verified marketplace links, contact details, and social destinations remain subject to owner review.

@@ -69,10 +69,11 @@ export default function ShopExperience() {
         <section className="catalogue-hero">
           <div className="site-shell">
             <p className="eyebrow">FSquaro catalogue</p>
-            <h1>Find the details that feel like you.</h1>
+            <h1>Explore what FSquaro has to offer.</h1>
             <p>
-              Browse the current jewellery and accessories collection, filter by
-              category, and open each product group to see its available variations.
+              Browse the current selection, filter by category, and open each
+              product group to see its available variations. New categories,
+              including food, can join the catalogue as they are added.
             </p>
           </div>
         </section>

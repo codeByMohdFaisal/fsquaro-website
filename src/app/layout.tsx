@@ -3,17 +3,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "FSquaro | Jewellery for Every Story",
+  title: "FSquaro | More for Everyday Life",
   description:
-    "Discover FSquaro fashion jewellery and accessories for everyday style and special moments.",
+    "Discover FSquaro's growing range of products for everyday needs, interests, and moments.",
   icons: {
     icon: "/brand/favicon.ico",
     apple: "/brand/apple-touch-icon.png",
   },
   openGraph: {
-    title: "FSquaro | Jewellery for Every Story",
+    title: "FSquaro | More for Everyday Life",
     description:
-      "Discover FSquaro fashion jewellery and accessories for everyday style and special moments.",
+      "Discover FSquaro's growing range of products for everyday needs, interests, and moments.",
     images: ["/brand/og-image-1200x630.png"],
   },
 };

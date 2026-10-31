@@ -6,6 +6,7 @@
 2. Purchase actions will send visitors to verified external marketplaces.
 3. Product prices will not be shown on the website.
 4. Search is part of the first release.
+5. FSquaro will support multiple product categories. The existing jewellery and accessories catalogue is the current selection; food and other categories can be added once their product data and imagery are available.
 
 ## Technical decisions
 

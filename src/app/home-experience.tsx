@@ -233,15 +233,15 @@ export default function HomeExperience() {
         <section className="hero" id="home" aria-labelledby="hero-title">
           <div className="site-shell hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow">FSquaro jewellery &amp; accessories</p>
-              <h1 id="hero-title">Jewellery for Every Story</h1>
+              <p className="eyebrow">FSquaro products for everyday life</p>
+              <h1 id="hero-title">Discover More with FSquaro</h1>
               <p className="hero-description">
-                Discover fashion jewellery and accessories made to complement your
-                everyday style and special moments.
+                Explore a growing range of products chosen for everyday needs,
+                interests, and moments.
               </p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#collections">
-                  Explore collections <ArrowRight size={17} aria-hidden="true" />
+                  Explore products <ArrowRight size={17} aria-hidden="true" />
                 </a>
                 <a className="button button-secondary" href="#featured">
                   View featured pieces
@@ -249,7 +249,7 @@ export default function HomeExperience() {
               </div>
               <div className="hero-note">
                 <Sparkles size={16} aria-hidden="true" />
-                <span>Thoughtful details for every mood and moment.</span>
+                <span>A growing collection across more categories.</span>
               </div>
             </div>
 
@@ -275,7 +275,7 @@ export default function HomeExperience() {
                 Discover FSquaro
               </p>
               <p>
-                A visual catalogue designed to make finding your next style easy.
+                A visual catalogue designed to make finding what you need easy.
               </p>
             </div>
             <article className="discovery-card">
@@ -283,8 +283,8 @@ export default function HomeExperience() {
                 <Gem size={22} strokeWidth={1.5} />
               </span>
               <div>
-                <h2>Explore collections</h2>
-                <p>Browse jewellery and accessories by category.</p>
+                <h2>Explore categories</h2>
+                <p>Browse the current selection by category.</p>
               </div>
             </article>
             <article className="discovery-card">
@@ -293,7 +293,7 @@ export default function HomeExperience() {
               </span>
               <div>
                 <h2>Discover the details</h2>
-                <p>See original product photography up close.</p>
+                <p>See product imagery and available options up close.</p>
               </div>
             </article>
             <article className="discovery-card">
@@ -301,7 +301,7 @@ export default function HomeExperience() {
                 <Sparkles size={22} strokeWidth={1.5} />
               </span>
               <div>
-                <h2>Find your style</h2>
+                <h2>Find what you need</h2>
                 <p>Search the collection by product or category.</p>
               </div>
             </article>
@@ -312,10 +312,11 @@ export default function HomeExperience() {
           <div className="site-shell">
             <div className="section-heading-row">
               <div>
-                <p className="eyebrow">Browse by style</p>
-                <h2 id="collections-title">Shop by Category</h2>
+                <p className="eyebrow">Explore the current range</p>
+                <h2 id="collections-title">Current Categories</h2>
                 <p className="section-intro">
-                  Explore the collection through original FSquaro product imagery.
+                  Start with the products available now. New categories, including
+                  food, can be added as the FSquaro catalogue grows.
                 </p>
               </div>
               <a className="inline-link" href="/shop">
@@ -359,11 +360,12 @@ export default function HomeExperience() {
           <div className="site-shell">
             <div className="section-heading-row section-heading-stack">
               <div>
-                <p className="eyebrow">A considered edit</p>
-                <h2 id="featured-title">Featured Pieces</h2>
+                <p className="eyebrow">From the current catalogue</p>
+                <h2 id="featured-title">Featured Products</h2>
                 <p className="section-intro">
-                  A first look at selected FSquaro collections. More product details
-                  and verified purchase links can be added after catalogue review.
+                  A first look at the products currently in the FSquaro catalogue.
+                  More categories, product details, and verified purchase links can
+                  be added as they are ready.
                 </p>
               </div>
             </div>
@@ -408,11 +410,10 @@ export default function HomeExperience() {
             </div>
             <div className="about-copy">
               <p className="eyebrow">About FSquaro</p>
-              <h2 id="about-title">Small details, personal style.</h2>
+              <h2 id="about-title">More for everyday life.</h2>
               <p>
-                FSquaro brings together fashion jewellery and accessories in a
-                growing collection of pieces for different occasions and ways of
-                styling.
+                FSquaro is building a growing catalogue of products across different
+                categories, for everyday needs, interests, and occasions.
               </p>
               <a className="button button-primary" href="#collections">
                 Discover the collection <ArrowRight size={17} aria-hidden="true" />
@@ -424,8 +425,8 @@ export default function HomeExperience() {
         <section className="style-strip" aria-label="FSquaro visual highlights">
           <div className="site-shell style-grid">
             <div className="style-copy">
-              <p className="eyebrow">Style inspiration</p>
-              <h2>Pieces made to be mixed, matched, and made your own.</h2>
+              <p className="eyebrow">More to discover</p>
+              <h2>A growing selection, with more categories on the way.</h2>
             </div>
             <div className="style-gallery">
               {categoryCards.slice(0, 3).map((category, index) => (
@@ -453,7 +454,7 @@ export default function HomeExperience() {
               width={190}
               height={64}
             />
-            <p>Fashion jewellery and accessories for everyday style and special moments.</p>
+            <p>A growing catalogue of products for everyday needs and interests.</p>
           </div>
           <div className="footer-column">
             <h2>Explore</h2>
@@ -527,7 +528,7 @@ export default function HomeExperience() {
               {query.trim().length === 0 ? (
                 <p>Search by a category or product style to explore the current collection.</p>
               ) : searchMatches.length === 0 ? (
-                <p>No matching pieces yet. Try a category such as earrings or hair accessories.</p>
+                <p>No matching products yet. Try a current category or a different search term.</p>
               ) : (
                 <>
                   <p className="search-results-count">
