@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Mail, MessageCircleMore, PackageSearch } from "lucide-react";
 
 import { CatalogueFooter, CatalogueHeader } from "../catalogue-chrome";
+import ContactForm from "./contact-form";
 
 export const metadata: Metadata = {
   title: "Contact FSquaro | More for Everyday Life",
@@ -57,6 +58,20 @@ export default function ContactPage() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="contact-form-section" aria-labelledby="contact-form-title">
+          <div className="site-shell contact-form-layout">
+            <div className="contact-form-intro">
+              <p className="eyebrow">Contact us</p>
+              <h2 id="contact-form-title">Send us your question.</h2>
+              <p>
+                Tell us what you need help with. The form will prepare an email for
+                FSquaro with your details already included.
+              </p>
+            </div>
+            <ContactForm />
           </div>
         </section>
 
