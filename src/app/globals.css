@@ -1443,6 +1443,23 @@ img {
   margin-top: 3px;
 }
 
+.contact-email {
+  display: inline-block;
+  margin: 1px 0 11px;
+  color: var(--navy-900);
+  font-size: 0.92rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.contact-email:hover {
+  color: var(--blue-500);
+}
+
+[data-theme="dark"] .contact-email {
+  color: #b5d9ff;
+}
+
 .contact-help-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

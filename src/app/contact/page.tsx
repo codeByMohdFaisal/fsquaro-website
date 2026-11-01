@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CircleCheck, MessageCircleMore, PackageSearch } from "lucide-react";
+import { ArrowRight, Mail, MessageCircleMore, PackageSearch } from "lucide-react";
 
 import { CatalogueFooter, CatalogueHeader } from "../catalogue-chrome";
 
@@ -34,23 +34,26 @@ export default function ContactPage() {
           <div className="site-shell contact-layout">
             <div className="contact-intro">
               <p className="eyebrow">Contact details</p>
-              <h2 id="contact-status-title">Verified channels are being prepared.</h2>
+              <h2 id="contact-status-title">Email FSquaro directly.</h2>
               <p>
-                FSquaro&apos;s official email, phone, and social channels will appear here
-                before the public launch. This keeps every customer conversation on a
-                confirmed channel from day one.
+                Use the official email below for customer, product, and business
+                enquiries. Phone and social channels can be added here once they are
+                ready to share.
               </p>
             </div>
 
             <div className="contact-status-card">
               <span className="contact-status-icon" aria-hidden="true">
-                <CircleCheck size={24} strokeWidth={1.6} />
+                <Mail size={24} strokeWidth={1.6} />
               </span>
               <div>
-                <h3>Contact page ready</h3>
+                <h3>Official email</h3>
+                <a className="contact-email" href="mailto:fsquaro.business@gmail.com">
+                  fsquaro.business@gmail.com
+                </a>
                 <p>
-                  Add the approved email address, phone or WhatsApp number, and social
-                  links here before deployment.
+                  Please include the product name and variation when your question is
+                  about an item in the catalogue.
                 </p>
               </div>
             </div>
@@ -63,8 +66,8 @@ export default function ContactPage() {
               <p className="eyebrow">How we can help</p>
               <h2 id="help-title">Clear details make it easier to help.</h2>
               <p>
-                When the contact channels are live, these details will help FSquaro
-                respond to your query more quickly.
+                When you email FSquaro, these details will help us respond to your
+                query more quickly.
               </p>
             </div>
 
