@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-type ActivePage = "shop" | "product";
+type ActivePage = "about" | "contact" | "product" | "shop";
 
 export function CatalogueHeader({ activePage }: { activePage: ActivePage }) {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -47,7 +47,12 @@ export function CatalogueHeader({ activePage }: { activePage: ActivePage }) {
             Shop
           </Link>
           <Link href="/#collections">Collections</Link>
-          <Link href="/#about">About</Link>
+          <Link className={activePage === "about" ? "is-active" : ""} href="/about">
+            About
+          </Link>
+          <Link className={activePage === "contact" ? "is-active" : ""} href="/contact">
+            Contact
+          </Link>
         </nav>
 
         <div className="header-actions">
@@ -96,8 +101,11 @@ export function CatalogueHeader({ activePage }: { activePage: ActivePage }) {
         <Link href="/#collections" onClick={closeMobileNavigation}>
           Collections
         </Link>
-        <Link href="/#about" onClick={closeMobileNavigation}>
+        <Link href="/about" onClick={closeMobileNavigation}>
           About
+        </Link>
+        <Link href="/contact" onClick={closeMobileNavigation}>
+          Contact
         </Link>
       </nav>
     </header>
@@ -121,7 +129,7 @@ export function CatalogueFooter() {
           <h2>Explore</h2>
           <Link href="/shop">Shop all pieces</Link>
           <Link href="/#collections">Collections</Link>
-          <Link href="/#about">About FSquaro</Link>
+          <Link href="/about">About FSquaro</Link>
         </div>
         <div className="footer-column">
           <h2>Product details</h2>
@@ -129,7 +137,8 @@ export function CatalogueFooter() {
         </div>
         <div className="footer-column">
           <h2>Keep in touch</h2>
-          <p>Contact details and verified social links will be added here.</p>
+          <Link href="/contact">Contact FSquaro</Link>
+          <p>Verified contact details will be added before launch.</p>
         </div>
       </div>
       <div className="site-shell footer-bottom">

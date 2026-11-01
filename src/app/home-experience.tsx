@@ -156,8 +156,8 @@ export default function HomeExperience() {
             <a href="/shop">Shop</a>
             <a href="#collections">Collections</a>
             <a href="#featured">Featured</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
           </nav>
 
           <div className="header-actions">
@@ -220,10 +220,10 @@ export default function HomeExperience() {
           <a href="#featured" onClick={closeMobileNavigation}>
             Featured
           </a>
-          <a href="#about" onClick={closeMobileNavigation}>
+          <a href="/about" onClick={closeMobileNavigation}>
             About
           </a>
-          <a href="#contact" onClick={closeMobileNavigation}>
+          <a href="/contact" onClick={closeMobileNavigation}>
             Contact
           </a>
         </nav>
@@ -397,7 +397,7 @@ export default function HomeExperience() {
           </div>
         </section>
 
-        <section className="section" id="about" aria-labelledby="about-title">
+        <section className="section" aria-labelledby="about-title">
           <div className="site-shell about-grid">
             <div className="about-image">
               <Image
@@ -410,13 +410,13 @@ export default function HomeExperience() {
             </div>
             <div className="about-copy">
               <p className="eyebrow">About FSquaro</p>
-              <h2 id="about-title">More for everyday life.</h2>
+              <h2 id="about-title">More about FSquaro.</h2>
               <p>
                 FSquaro is building a growing catalogue of products across different
                 categories, for everyday needs, interests, and occasions.
               </p>
-              <a className="button button-primary" href="#collections">
-                Discover the collection <ArrowRight size={17} aria-hidden="true" />
+              <a className="button button-primary" href="/about">
+                Discover our story <ArrowRight size={17} aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -445,7 +445,7 @@ export default function HomeExperience() {
         </section>
       </main>
 
-      <footer className="site-footer" id="contact">
+      <footer className="site-footer">
         <div className="site-shell footer-grid">
           <div className="footer-brand">
             <Image
@@ -461,7 +461,7 @@ export default function HomeExperience() {
             <a href="/shop">Shop all products</a>
             <a href="#collections">Collections</a>
             <a href="#featured">Featured pieces</a>
-            <a href="#about">About FSquaro</a>
+            <a href="/about">About FSquaro</a>
           </div>
           <div className="footer-column">
             <h2>Categories</h2>
@@ -473,7 +473,8 @@ export default function HomeExperience() {
           </div>
           <div className="footer-column">
             <h2>Keep in touch</h2>
-            <p>Contact details and verified social links will be added here.</p>
+            <a href="/contact">Contact FSquaro</a>
+            <p>Verified contact details will be added before launch.</p>
           </div>
         </div>
         <div className="site-shell footer-bottom">
